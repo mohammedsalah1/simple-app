@@ -1,0 +1,27 @@
+
+<div class="d-flex justify-content-center align-items-center flex-wrap">
+
+<div class="card-container" *ngFor="let user of users | paginate: {
+  id:'listing_pagination',
+  itemsPerPage: pageSize,
+  currentPage: p,
+  totalItems: totalItems}">
+	<img class="round" src="{{user.avatar}}" alt="user" />
+	<h3>{{user.first_name + ' ' + user.last_name }}</h3>
+	
+	<div class="contact">
+		<h6>Contact</h6>
+		<h4>{{user.email}}</h4>
+		
+	</div>
+</div>
+</div>
+
+
+<pagination-controls  id="listing_pagination" maxSize="5"
+
+directionLinks="true"
+
+(pageChange)="changePage($event)"></pagination-controls>
+
+

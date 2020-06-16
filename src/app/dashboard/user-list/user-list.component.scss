@@ -1,0 +1,54 @@
+@import '../../../theme/theme.scss';
+
+.card-container {
+  background-color: $primary;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: $secondary;
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+img {
+  transition: all .2s ease-in-out;
+}
+
+.card-container {
+  &:hover img {
+    transform: scale(1.1, 1.1);
+  }
+
+  .round {
+    border: 1px solid #light_blue;
+    border-radius: 50%;
+    padding: 7px;
+  }
+}
+
+/*  */
+
+.contact {
+  background-color: $dark_blue;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      border: 1px solid #2D2747;
+      border-radius: 2px;
+      display: inline-block;
+      font-size: 12px;
+      margin: 0 7px 7px 0;
+      padding: 7px;
+    }
+  }
+}
