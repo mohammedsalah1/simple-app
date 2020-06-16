@@ -1,5 +1,5 @@
 # Simple App 
-![Alt text](incomplete.jpeg?raw=true "Incomplete")
+![Alt text](unfinished_horse.jpg?raw=true "Incomplete")
 
 # Getting started
 
